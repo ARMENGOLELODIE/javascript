@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Javascript</title>
+</head>
+<body>
+    
+
+
+<header>
+    <h1>Exercice 4</h1>
+    <p>
+        Refaire l’exercice 2 en demandant le nom, le prénom et la ville à l’utilisateur grâce à un formulaire
+        HTML.</p>
+
+        <form name="monformulaire1" action="" method="post" onSubmit="return Verification()">
+           <div>
+             <label for="idNom">Nom</label>
+             <input type="text" name="nom" id="Nom">
+           </div>
+           <div>
+            <label for="idPrenom">Prénom</label>
+            <input type="text" name="prenom" id="Prenom">
+          </div>
+            <div>
+            <label for="idCity">Ville</label>
+            <input type="text" name="city" id="City">
+        </div>
+         <div>
+            <input type="button" name=""onclick="sendData()">ENV FORMULAIRE
+        </div>
+            </form>
+           
+            <!-- le onclick ci dessus "sendData" sers à dire à la fonction de cliquer à cet instant -->
+            <script>
+        
+            
+       
+       function sendData () {
+           
+            var nom = document.getElementById('Nom').value;
+            var prenom = document.getElementById('Prenom').value;
+            var ville = document.getElementById('City').value;
+            alert('Nom :'  + nom + '\n' + 'Prénom :' + prenom + '\n' + 'ville :'+ ville )
+           
+}
+
+            </script>
+            <!-- "document" est une propriété propre à JavaScript-
+                ->
+                   
+       
+</script>
+</body>
+</html>
